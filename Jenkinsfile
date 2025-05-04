@@ -11,6 +11,7 @@ pipeline {
             steps{
                 script{
                     sh 'docker build -t ashwinr2001/may042025projecthotsar:v1 .'
+                    sh 'docker run -itd -p 2021:8080 may042025projecthotsar'
                 }
             }
         }
